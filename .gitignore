@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Runtime generated — contains credentials, never commit
+cookies.txt
+filter.txt
+
+# Runtime generated — logs
+*.log
+*.log.*
+
+# Runtime generated — state files
+liked.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
