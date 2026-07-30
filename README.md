@@ -13,7 +13,8 @@
 ### 灵感来源
 油猴脚本：[bilibili 动态自动点赞](https://greasyfork.org/zh-CN/scripts/458535-bilibili-%E5%8A%A8%E6%80%81%E8%87%AA%E5%8A%A8%E7%82%B9%E8%B5%9E)
 
----
+### 许可协议
+本项目遵循 MIT license 开源协议，详细查看 [LICENSE](LICENSE) 文件。
 
 ### 风险警告与免责声明
 
@@ -76,13 +77,20 @@ bbtl-thumb/
 
 ## 使用方式
 
-### 1. 安装依赖
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/ayyyyano/bbtl-thumb.git
+cd bbtl-thumb
+```
+
+### 2. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. 获取登录态（Cookie）
+### 3. 获取登录态（Cookie）
 
 首次运行时，若 `cookies.txt` 不存在或缺少 `SESSDATA` / `bili_jct`，脚本会提示选择登录方式：
 
@@ -193,7 +201,3 @@ python main.py
 | `QR_TIMEOUT` | 180 秒 | 扫码登录超时时间 |
 | `LOG_FILE` | `bbtl-thumb.log` | 日志文件路径 |
 | `LOG_MAX_SIZE` | 1 MB | 日志文件大小上限，超出自动轮转 |
-
-## License
-
-MIT
